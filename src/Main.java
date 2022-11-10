@@ -55,12 +55,7 @@ public class Main {
             if (scr.hasNextInt()){
             int t = scr.nextInt();
                 if (t == 1) {
-                    Revers rev = new Revers() {
-                        @Override
-                        public String rere(String str) {
-                            return new StringBuilder(str).reverse().toString();
-                        }
-                    };
+                    Revers rev = str -> new StringBuilder(str).reverse().toString();
                     System.out.println(rev.rere(res));
                 } else System.out.println("Введите число 1 в следующий раз.");
             }else{
